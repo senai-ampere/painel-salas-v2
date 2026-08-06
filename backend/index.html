@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Salas SENAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+
+            <div class="logo-area">
+                <img src="img/Logo_Sistema_Fiep_Padrao_Branco_Fundo_Transparente.png" alt="Sistema FIEP">
+            </div>
+
+            <div class="titulo-area">
+                <h2>PAINEL DE SALAS</h2>
+            </div>
+
+            <div class="info">
+                <div id="dataAtual"></div>
+                <div id="horaAtual"></div>
+            </div>
+
+        </header>
+
+        <section class="resumo">
+
+            <div id="dataExibida"></div>
+
+            <div id="contadorSalas"></div>
+
+        </section>
+
+        <main>
+
+            <div id="salasContainer"></div>
+
+        </main>
+        <section class="banner">
+
+            <span id="bannerTexto">
+                Bem-vindo ao SENAI
+            </span>
+
+        </section>
+        <footer>
+
+            <div class="footer-contatos">
+
+                <span>
+                    Instagram: @sesienaiiel.ampere
+                </span>
+
+                <span>
+                    WhatsApp: (46) 2122-0622
+                </span>
+
+            </div>
+
+            <p id="ultimaAtualizacao"></p>
+
+            <div id="qrFlutuante" class="qr-fixo">
+
+                <p>Escaneie o QRCode</p>
+
+                <img src="img/qrcode-instagram.png" alt="Instagram SENAI">
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

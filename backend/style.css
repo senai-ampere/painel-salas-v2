@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: #f0f4f8;
+
+    min-height: 100vh;
+}
+
+.app {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+header {
+
+    background: #003366;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    padding: 15px 30px;
+}
+
+.logo-area img {
+
+    width: 280px;
+
+    max-width: 100%;
+}
+
+.titulo-area {
+
+    text-align: center;
+}
+
+h2 {
+
+    font-size: clamp(1.8rem,
+            2vw,
+            2.8rem);
+
+    letter-spacing: 2px;
+}
+
+.info {
+
+    text-align: right;
+}
+
+#dataAtual {
+
+    font-size: clamp(1rem,
+            1.2vw,
+            1.4rem);
+
+    font-weight: 600;
+}
+
+#horaAtual {
+
+    font-size: clamp(2.4rem,
+            3vw,
+            4rem);
+
+    font-weight: 700;
+}
+
+.resumo {
+
+    background: #003366;
+
+    color: #f0f4f8;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 5px 30px;
+
+    font-weight: 700;
+
+    font-size: clamp(1rem,
+            1.4vw,
+            1.6rem);
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, .08);
+}
+
+main {
+
+    flex: 1;
+
+    display: flex;
+}
+
+#salasContainer {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill,
+            minmax(350px, 450px));
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    min-height: 140px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, .12);
+    transition:
+        transform .2s,
+        box-shadow .2s;
+}
+
+.card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, .18);
+}
+
+.sala {
+    font-size: clamp(1.5rem,
+            2vw,
+            2.4rem);
+
+    font-weight: 700;
+}
+
+.turma {
+    font-size: clamp(1.1rem,
+            1.5vw,
+            1.8rem);
+
+    line-height: 1.4;
+}
+
+.sem-aulas {
+
+    text-align: center;
+}
+
+.sem-aulas .sala {
+
+    font-size: 2rem;
+}
+
+.sem-aulas .turma {
+
+    font-size: 1.3rem;
+}
+
+footer {
+
+    background: #003366;
+
+    color: white;
+
+    margin-top: auto;
+
+    padding: 8px;
+
+    position: relative;
+}
+
+.footer-contatos {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+    font-size: 1rem;
+}
+
+#ultimaAtualizacao {
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    opacity: .8;
+}
+
+.institucional {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.logoInstitucional {
+
+    width: 500px;
+
+    max-width: 80%;
+}
+
+.institucional h2 {
+
+    margin-top: 30px;
+
+    font-size: clamp(2rem,
+            3vw,
+            4rem);
+}
+
+.institucional p {
+
+    font-size: clamp(1rem,
+            1.8vw,
+            2rem);
+}
+
+.banner {
+
+    background: #003366;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    padding: 8px;
+
+    font-size: clamp(1rem,
+            1.4vw,
+            1.5rem);
+}
+
+.qr-fixo {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    background: white;
+
+    color: #003366;
+
+    font-size: 12px;
+
+    padding: 10px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.qr-fixo img {
+    width: 115px;
+}
+
+.institucional-layout {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 10px;
+}
+
+.logos-rotativas {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.logos-rotativas img {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    max-height: 500px;
+
+    object-fit: contain;
+}
+
+.qr-institucional {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.qr-institucional h3 {
+
+    color: #003366;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 10px;
+}
+
+.qr-institucional img {
+
+    width: 250px;
+
+    max-width: 100%;
+}
+
+.qr-institucional p {
+
+    margin-top: 15px;
+
+    font-size: 1.3rem;
+}
+
+.modo-institucional {
+
+    display: flex !important;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+#bannerTexto {
+
+    animation:
+        fadeBanner 1s ease;
+}
+
+@keyframes fadeBanner {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(10px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
